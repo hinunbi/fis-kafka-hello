@@ -8,8 +8,7 @@ import org.springframework.context.annotation.Configuration;
 
 import javax.jms.ConnectionFactory;
 
-@Configuration
-@ConditionalOnProperty(value = "camel.amq.enabled", matchIfMissing = true)
+// @Configuration
 public class AmqConfiguration {
 
   final

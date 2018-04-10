@@ -33,7 +33,7 @@ public class Application extends RouteBuilder {
         .log("    on the partition ${headers[kafka.PARTITION]}")
         .log("    with the offset ${headers[kafka.OFFSET]}")
         .log("    with the key ${headers[kafka.KEY]}")
-        .to("amq:test?jmsMessageType=Text")
+       // .to("amq:test?jmsMessageType=Text")
     ;
   }
 }
