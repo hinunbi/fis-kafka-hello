@@ -95,10 +95,6 @@
     </dependency>
     <!-- JBoss AMQ -->
     <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-activemq</artifactId>
-    </dependency>
-    <dependency>
       <groupId>org.apache.activemq</groupId>
       <artifactId>activemq-camel</artifactId>
       <!--<version>5.11.0.redhat-630283</version>-->

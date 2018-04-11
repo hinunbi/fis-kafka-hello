@@ -9,7 +9,6 @@ import org.springframework.context.annotation.ComponentScan;
 
 
 @SpringBootApplication
-@CamelZipkin
 @ComponentScan({"spring"})
 public class Application extends RouteBuilder {
 
@@ -22,7 +21,7 @@ public class Application extends RouteBuilder {
 
     from("timer://foo?period=5000")
         .routeId("kafka-producer")
-        .setBody().simple("Hello World at ${date:now:yyyy-MM-dd hh:mm:ss,SSS}")
+        .setBody().simple("Hello World at ${date:now:yyyy-MM-dd HH:mm:ss,SSS}")
         .log(">>> ${body}")
         .to("kafka:test?brokers=brokers={{kafka.bootstrap-servers}}");
 
