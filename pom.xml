@@ -94,12 +94,12 @@
       <version>2.7.1</version>
     </dependency>
     <!-- JBoss AMQ -->
-    <dependency>
-      <groupId>org.apache.activemq</groupId>
-      <artifactId>activemq-camel</artifactId>
-      <!--<version>5.11.0.redhat-630283</version>-->
-      <version>5.14.5</version>
-    </dependency>
+    <!--<dependency>-->
+      <!--<groupId>org.apache.activemq</groupId>-->
+      <!--<artifactId>activemq-camel</artifactId>-->
+      <!--&lt;!&ndash;<version>5.11.0.redhat-630283</version>&ndash;&gt;-->
+      <!--<version>5.14.5</version>-->
+    <!--</dependency>-->
 
     <!-- testing -->
     <dependency>

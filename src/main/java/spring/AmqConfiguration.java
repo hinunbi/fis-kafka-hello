@@ -1,27 +1,21 @@
 package spring;
 
-import org.apache.activemq.camel.component.ActiveMQComponent;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
-
-import javax.jms.ConnectionFactory;
-
 // @Configuration
 public class AmqConfiguration {
 
-  final
-  ConnectionFactory connectionFactory;
-
-  @Autowired
-  public AmqConfiguration(ConnectionFactory connectionFactory) {
-    this.connectionFactory = connectionFactory;
-  }
-
-  @Bean
-  ActiveMQComponent amq() {
-    ActiveMQComponent activemq = new ActiveMQComponent();
-    activemq.setConnectionFactory(connectionFactory);
-
-    return activemq;
-  }
+//  final
+//  ConnectionFactory connectionFactory;
+//
+//  @Autowired
+//  public AmqConfiguration(ConnectionFactory connectionFactory) {
+//    this.connectionFactory = connectionFactory;
+//  }
+//
+//  @Bean
+//  ActiveMQComponent amq() {
+//    ActiveMQComponent activemq = new ActiveMQComponent();
+//    activemq.setConnectionFactory(connectionFactory);
+//
+//    return activemq;
+//  }
 }

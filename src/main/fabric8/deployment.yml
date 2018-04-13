@@ -12,7 +12,7 @@ spec:
 #              memory: 256Mi
           env:
           - name: KAFKA_BROKERS
-            value: "kafka:9092"
+            value: "kafka.kafka.svc:9092"
           - name: ZIPKIN_ENABLED
             value: false
           - name: ZIPKIN_ENDPOINT
