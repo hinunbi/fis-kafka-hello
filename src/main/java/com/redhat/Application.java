@@ -1,8 +1,6 @@
 package com.redhat;
 
 import org.apache.camel.builder.RouteBuilder;
-import org.apache.camel.component.kafka.KafkaConstants;
-import org.apache.camel.zipkin.starter.CamelZipkin;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
@@ -23,7 +21,7 @@ public class Application extends RouteBuilder {
         .routeId("kafka-producer")
         .setBody().simple("Hello World at ${date:now:yyyy-MM-dd HH:mm:ss,SSS}")
         .log(">>> ${body}")
-        .to("kafka:test?brokers=brokers={{kafka.bootstrap-servers}}");
+        .to("kafka:test?brokers={{kafka.bootstrap-servers}}");
 
     from("kafka:test?brokers={{kafka.bootstrap-servers}}&groupId={{kafka.consumer.group-id}}")
         .routeId("kafka-consumer")
