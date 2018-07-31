@@ -4,12 +4,6 @@ This example demonstrates how you can use Apache Camel Kafka component with Spri
 
 It uses Spring Boot to send a kafka message every 5th second, and routes the message to a log.
 
-### Building
-
-The example can be built with
-
-    mvn clean install
-
 ### Running the application on local host
 
 
